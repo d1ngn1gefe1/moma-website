@@ -10,11 +10,13 @@ import AboutLogo from '../../assets/icons/AboutLogo.svg';
 import DownloadLogo from '../../assets/icons/DownloadLogo.svg';
 import PublicationLogo from '../../assets/icons/PublicationLogo.svg';
 import ExploreLogo from '../../assets/icons/ExploreLogo.svg';
+import Overlay from '../../assets/img/overlay.jpeg';
 
 function Title() {
 
     return (
         <div className="title">
+         <img className="title-img" src={Overlay} />
           <Container className="title-container">
             <Row>
               <Col> <h1>
@@ -40,3 +42,6 @@ function Title() {
 }
 
 export default Title;
+
+
+// <img className="title-img" src={Overlay} />

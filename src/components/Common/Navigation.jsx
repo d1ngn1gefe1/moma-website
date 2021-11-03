@@ -7,18 +7,7 @@ class Navigation extends Component {
 
   constructor(props) {
     super(props);
-    // this.state = {
-    //   open: false,
-    // };
-    // this.toggle = this.toggle.bind(this);
   }
-
-  // Toggles collapsable navbar only when navbar collapses (under 992px)
-  // toggle() {
-  //   if (window.innerWidth < 992) {
-  //     this.setState(prevState => ({ open: !prevState.open }));
-  //   }
-  // }
 
   render() {
     const links = Navigation.links;

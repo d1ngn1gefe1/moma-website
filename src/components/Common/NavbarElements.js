@@ -4,7 +4,7 @@ import styled from 'styled-components';
 export const NavLink = styled(Link)`
   color: #28454F;
   font-size: 16px;
-  font-weight: 500;
+  font-weight: 600;
   display: flex;
   align-items: center;
   text-decoration: none;

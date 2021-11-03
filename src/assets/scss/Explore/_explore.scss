@@ -5,7 +5,9 @@
   color: $moma-black;
   flex-direction: column;
   justify-content: center;
+  align-items: center;
   font-family: 'Rubik', sans-serif;
+  padding-top: 100px;
 
   .explore-title {
     border-left: 4px solid $moma-light-green;

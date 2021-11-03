@@ -8,8 +8,13 @@
   margin-top: 150px;
   margin-bottom: 120px;
 
+  .team-sub-title {
+    text-align: left;
+    margin: 10px 0 15px 10px;
+  }
+
   .team-title {
-    margin-bottom: 60px;
+    margin-bottom: 50px;
   }
 
   .team-container {
@@ -24,8 +29,8 @@
 
     .headshot {
       img {
-        width: 100px;
-        height: 100px;
+        width: 140px;
+        height: 140px;
       }
       margin: 10px 0 15px 0;
     }

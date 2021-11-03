@@ -7,7 +7,9 @@ import {
   Form,
   InputGroup
 } from 'react-bootstrap';
+import ExploreCard from '../components/Explore/ExploreCard';
 import SearchImg from "../assets/icons/search.svg";
+
 
 class Explore extends PureComponent {
   render() {
@@ -18,13 +20,8 @@ class Explore extends PureComponent {
             <h1 className="explore-title"> Explore </h1>
           </Row>
           <Row>
-            <Col md={4}>
-              <Form.Control placeholder="Type..." />
-            </Col>
-            <Col md={2}>
-              <Button variant="moma-primary" size="moma-lg">
-                <img className="explore-icon" src={SearchImg}/>
-              </Button>
+            <Col md={{span: 10}}>
+
             </Col>
           </Row>
 
@@ -36,6 +33,6 @@ class Explore extends PureComponent {
 
   }
 }
-
+// <ExploreCard />
 
 export default Explore;
