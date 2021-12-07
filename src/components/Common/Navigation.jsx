@@ -17,7 +17,7 @@ class Navigation extends Component {
         fixed="top"
         expand="lg"
         bg="#3AAFA9"
-        className={'navbar'}
+        className="navbar"
       >
           <NavBanner as={Link} to="/">MOMA</NavBanner>
           <Nav className="ms-auto" />

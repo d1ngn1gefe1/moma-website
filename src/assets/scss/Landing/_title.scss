@@ -1,5 +1,6 @@
 .title {
   background-color: $moma-light-green;
+  // background-color: white;
   text-align: center;
   width: 100vw;
   height: 100vh;
@@ -24,6 +25,7 @@
 
   h1 {
     color: $moma-white;
+    // color: $moma-light-green;
     font-size: 70px;
     font-weight: bold;
   }
@@ -31,6 +33,7 @@
   p {
     font-size: 24px;
     color: $moma-white;
+    // color: $moma-light-green;
     margin-top: 10px;
     font-weight: 600;
   }

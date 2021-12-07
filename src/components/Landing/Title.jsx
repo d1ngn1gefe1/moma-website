@@ -18,6 +18,7 @@ function Title() {
         <div className="title">
          <img className="title-img" src={Overlay} />
           <Container className="title-container">
+
             <Row>
               <Col> <h1>
                       <span className="title-first-char">M</span>ulti-<span className="title-first-char">O</span>bject

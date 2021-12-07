@@ -1,4 +1,4 @@
-import React, { PureComponent } from 'react';
+import React, { Component } from 'react';
 import {
   Container,
   Row,
@@ -7,7 +7,14 @@ import {
 } from 'react-bootstrap';
 import MomaPubImg from '../assets/img/moma-publication.png';
 
-class Publication extends PureComponent {
+class Publication extends Component {
+  constructor(props) {
+    super(props);
+  }
+
+  componentWillMount() {
+    document.body.style.overflow = "hidden";
+  }
   render() {
     return (
       <div className="publication">
