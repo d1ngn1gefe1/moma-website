@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import reportWebVitals from './reportWebVitals';
-import { BrowserRouter } from 'react-router-dom';
+import { HashRouter, BrowserRouter } from 'react-router-dom';
 import ScrollToTop from './components/Scroll/ScrollToTop';
 import Moma from './Moma';
 import './assets/scss/moma.scss';
@@ -9,11 +9,11 @@ import './assets/scss/moma.scss';
 
 ReactDOM.render(
   <React.StrictMode>
-    <BrowserRouter>
+    <HashRouter>
       <ScrollToTop>
         <Moma />
       </ScrollToTop>
-    </BrowserRouter>
+    </HashRouter>
   </React.StrictMode>,
   document.getElementById('root')
 );

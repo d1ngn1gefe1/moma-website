@@ -17,6 +17,7 @@ class Explore extends Component {
   constructor(props) {
       super(props);
       this.state = {
+        hide: true,
         activityClass: "tennis",
         data: [],
         filters: {}, //available options
@@ -237,10 +238,21 @@ class Explore extends Component {
   }
 
   render() {
-    const { data } = this.state;
+    const { data, hide } = this.state;
     // console.log(data);
+    console.log(hide);
     return (
       <div className="explore">
+        {hide ?
+          <Container>
+            <Row>
+              <h1 className="explore-title"> Explore </h1>
+            </Row>
+            <Row>
+              <h6 className="explore-text"> The explore page is coming soon... </h6>
+            </Row>
+          </Container>
+        :
         <Container className="explore-contianer">
           <Row className="explore-filter">
             <Filters filters={this.buildFilters()} filterHandler={this.filterHandler}/>
@@ -252,9 +264,7 @@ class Explore extends Component {
               </Col>
             </Row>
           ))}
-
-        </Container>
-
+        </Container>}
       </div>
 
     )
@@ -263,20 +273,3 @@ class Explore extends Component {
 }
 
 export default Explore;
-
-// <div className="text"> hahahahhhahhhh </div>
-// <div className="text"> hahahahhhahhhh </div>
-// <div className="text"> hahahahhhahhhh </div>
-// <div className="text"> hahahahhhahhhh </div>
-// <div className="text"> hahahahhhahhhh </div>
-// <div className="text"> hahahahhhahhhh </div>
-// <div className="text"> hahahahhhahhhh </div>
-// <div className="text"> hahahahhhahhhh </div>
-// <div className="text"> hahahahhhahhhh </div>
-// <div className="text"> hahahahhhahhhh </div>
-// <div className="text"> hahahahhhahhhh </div>
-// <div className="text"> hahahahhhahhhh </div>
-// <div className="text"> hahahahhhahhhh </div>
-// <div className="text"> hahahahhhahhhh </div>
-// <div className="text"> hahahahhhahhhh </div>
-// <div className="text"> hahahahhhahhhh </div>

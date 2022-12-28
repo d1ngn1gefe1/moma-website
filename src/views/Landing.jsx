@@ -21,7 +21,6 @@ class Landing extends Component {
         <Title />
         <Feature />
         <Team />
-        <Sponsors />
       </div>
 
 
@@ -32,3 +31,5 @@ class Landing extends Component {
 
 
 export default Landing;
+
+// <Sponsors />

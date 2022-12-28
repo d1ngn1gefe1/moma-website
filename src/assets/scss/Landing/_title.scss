@@ -10,11 +10,15 @@
   align-items: center;
 
   .title-img {
-    opacity: 10%;
+    opacity: 0.08;
     position:absolute;
     width: 100vw;
     height: 100vh;
     z-index: 0;
+    height: 100vh;
+    width: 100%;
+    object-fit: cover;
+
   }
 
   .title-container {
@@ -28,6 +32,11 @@
     // color: $moma-light-green;
     font-size: 70px;
     font-weight: bold;
+
+    @include mobile {
+      font-size: 45px;
+      margin-bottom: 20px;
+    }
   }
 
   p {
@@ -36,6 +45,10 @@
     // color: $moma-light-green;
     margin-top: 10px;
     font-weight: 600;
+    @include mobile {
+      font-size: 17px;
+      margin-bottom: 30px;
+    }
   }
 
   .title-first-char {
@@ -46,30 +59,31 @@
     display: flex;
     justify-content: center;
     text-align: center;
-    // border-style: solid;
-    // border-width: thin;
-    // border-radius: 30px;
     margin: 50px 0 0 50px;
     padding: 20px 0 5px 0;
     width: 60%;
-    // box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-    // box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-    //
-    // &:hover {
-    //   box-shadow: rgba(0, 0, 0, 0.24) 0px 6px 12px;
-    //   // box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-    // }
+
+    @include mobile {
+      margin: 15px 0 0 25px;
+      padding: 0;
+    }
 
   }
 
   .button-icon {
     height: 60px;
     width: auto;
+
+    @include mobile {
+      height: 50px;
+    }
   }
 
   .button-text{
     color: $moma-black;
     font-size: 18px;
-    // font-weight: 600;
+    @include mobile {
+      font-size: 17px;
+    }
   }
 }
