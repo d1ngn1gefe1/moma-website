@@ -15,11 +15,6 @@ class Download extends Component {
     document.body.style.overflow = "hidden";
   }
 
-  downloadAnnotations = (e) => {
-    e.preventDefault();
-    window.open('https://drive.google.com/file/d/1YZtTgBBDU3pWj4BzrS5mfR29xzD3mGrh/view?usp=sharing');
-  }
-
   render() {
     return (
       <div className="download">
@@ -32,9 +27,26 @@ class Download extends Component {
             <p className="download-text"> We provide the dataset annotations and a script to crawl videos below. Alternatively, if you're interested in the raw videos for research purposes please email momadataset@lists.stanford.edu.</p>
             </Col>
           </Row>
+
+          <br></br>
+
           <Row>
+            <h4>MOMA 1.0</h4>
             <Col md={7} xs={12}>
-              <Button variant="moma-primary" size="moma-lg" onClick={(e) => this.downloadAnnotations(e)} className="download-button"> Annotations </Button>
+              <Button variant="moma-primary" size="moma-lg" className="download-button" href="https://github.com/d1ngn1gefe1/moma-1.0"> Toolkit </Button>
+              <Button variant="moma-primary" size="moma-lg" className="download-button" href="https://proceedings.neurips.cc/paper/2021/file/95688ba636a4720a85b3634acfec8cdd-Paper.pdf"> Paper </Button>
+            </Col>
+          </Row>
+
+          <br></br>
+
+          <Row>
+            <h4>MOMA-LRG</h4>
+            <Col md={7} xs={12}>
+              <Button variant="moma-primary" size="moma-lg" className="download-button" href="https://github.com/StanfordVL/moma/"> Toolkit </Button>
+              <Button variant="moma-primary" size="moma-lg" className="download-button" href="https://openreview.net/pdf?id=eJhc_CPXQIT"> Paper </Button>
+              <Button variant="moma-primary" size="moma-lg" className="download-button" href="https://momaapi.readthedocs.io/en/latest/"> Documentation </Button>
+
             </Col>
           </Row>
 

@@ -26,31 +26,34 @@ function Feature() {
         </Row>
         <Row>
           <Col md={4} xs={12}>
-            <div className="feature-number"> 373 </div>
+            <div className="feature-number"> 1,412 </div>
             <div className="feature-text"> raw videos at activity level </div>
           </Col>
           <Col md={4} xs={12}>
-            <div className="feature-number"> 2364 </div>
+            <div className="feature-number"> 15,842 </div>
             <div className="feature-text"> trimmed videos at sub-activity level </div>
           </Col>
           <Col md={4} xs={12}>
-            <div className="feature-number"> 12057 </div>
+            <div className="feature-number"> 161,265 </div>
             <div className="feature-text"> atomic action instances </div>
           </Col>
         </Row>
         <Row>
-          <Col md={4} xs={12}>
-            <div className="feature-number"> 38K </div>
-            <div className="feature-text"> annotated frames </div>
+          <Col md={3} xs={12}>
+            <div className="feature-number"> 636,194 </div>
+            <div className="feature-text"> actor instances from 26 classes</div>
           </Col>
-          <Col md={4} xs={12}>
-            <div className="feature-number"> 164K </div>
-            <div className="feature-text"> character/object instances of 20
-            actor classes and 120 object classes</div>
+          <Col md={3} xs={12}>
+            <div className="feature-number"> 349,034 </div>
+            <div className="feature-text"> objects instances from 126 classes</div>
           </Col>
-          <Col md={4} xs={12}>
-            <div className="feature-number"> 4.39 </div>
-            <div className="feature-text"> actors/objects per frame</div>
+          <Col md={3} xs={12}>
+            <div className="feature-number"> 704,230 </div>
+            <div className="feature-text"> attribute instances from 13 classes </div>
+          </Col>
+          <Col md={3} xs={12}>
+            <div className="feature-number"> 1,037,013 </div>
+            <div className="feature-text"> relationship instances from 52 classes </div>
           </Col>
         </Row>
 

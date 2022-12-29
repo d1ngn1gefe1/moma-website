@@ -1,5 +1,7 @@
-# Deploy
+## Development
+- Run `npm run start`
 
+## Deployment
 - Run `npm run build` locally
 - `zip build`
 - `scp PATH/TO/build.zip USERNAME@ai.stanford.edu:/afs/cs.stanford.edu/group/moma`
